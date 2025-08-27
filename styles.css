@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1E90FF; /* Синий фон */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    padding: 10px 20px;
+}
+
+.site-title {
+    color: #fff; /* Цвет текста заголовка */
+    font-size: 24px; /* Размер шрифта */
+    text-align: center; /* Центрируем текст заголовка */
+    flex-grow: 1; /* Позволяет заголовку занимать доступное пространство */
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-btn {
+    background-color: #fff; /* Белый фон для кнопок */
+    color: #1E90FF; /* Синий текст */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-btn:hover {
+    background-color: #f0f0f0; /* Цвет при наведении */
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
+    justify-content: space-around; /* Распределение элементов */
+    padding: 20px;
+}
+
+.video-item {
+    background-color: #fff; /* Белый фон для видео */
+    border-radius: 5px;
+    margin: 10px;
+    width: calc(33% - 20px); /* Ширина каждого видео (3 в ряд с учетом отступов) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для видео */
+}
+
+.video-item img {
+    width: 100%; /* Изображение занимает всю ширину элемента */
+    border-radius: 5px 5px 0 0; /* Скругление верхних углов */
+}
+
+.title {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.description {
+    font-size: 14px;
+    margin: 10px;
+}
